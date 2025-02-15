@@ -19,7 +19,7 @@
                 </div>
               </div>
               <div class="col-auto">
-                <button class="btn bg-dark text-white"
+                <button class="btn custom-purple text-white"
                   type="submit">Search</button>
               </div>
             </div>
@@ -29,13 +29,13 @@
     </div>
     <div class="row">
       {% for movie in template_data.movies %}
-      <div class="col-md-4 col-lg-3 mb-2">
-        <div class="p-2 card align-items-center pt-4">
+      <div class="col-md-4 col-lg-3 mb-2 ">
+        <div class="p-2 card align-items-center pt-4 review-item">
           <img src="{{ movie.image.url }}"
-            class="card-img-top rounded img-card-200">
+            class="img-fluid rounded">
           <div class="card-body text-center">
               <a href="{% url 'movies.show' id=movie.id %}"
-                class="btn bg-dark text-white">
+                class="btn custom-purple text-white">
                 {{ movie.name }}
               </a>
           </div>
