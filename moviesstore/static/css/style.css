@@ -10,7 +10,7 @@
 }
 
 .custom-purple {
-  background-color: #7a48d3 !important; /* Change to any shade of purple */
+  background-color: #7a48d3 !important;
   border-color: #7a48d3 !important;
 }
 
@@ -23,7 +23,7 @@
 
 body {
   background-color: #000000 !important;
-  color: white; /* Ensures text is readable */
+  color: white;
 }
 
 .ms-footer p {
@@ -52,13 +52,13 @@ body {
 }
 
 .img-card-400 {
-  width: 100%;  /* Makes sure the image scales within its container */
-  max-width: 400px; /* Optional: Prevents the image from getting too large */
-  height: auto; /* Maintains aspect ratio */
-  max-height: 400px; /* Ensures it doesn’t exceed 400px in height */
-  object-fit: cover; /* Keeps a nice fit without distortion */
-  display: block; /* Removes extra space below the image */
-  margin: 0 auto; /* Centers the image */
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 .ms-footer b {
@@ -75,7 +75,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Full-screen height */
+  height: 100vh;
   text-align: center;
   background: url("/static/img/background.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -83,7 +83,7 @@ body {
 }
 
 .container {
-  max-width: 1300px; /* Keeps text nicely contained */
+  max-width: 1300px;
 }
 
 .lead {
@@ -91,10 +91,34 @@ body {
 }
 
 .review-author {
-  color: #000000; /* Purple */
+  color: #000000;
 }
 
 .review-item {
-  background-color: rgba(255, 255, 255, 0.76); /* Purple background */
-  color: #000000; /* White text */
+  background-color: rgba(255, 255, 255, 0.76);
+  color: #000000;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-item img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.card-body a {
+  margin-top: auto;
 }
